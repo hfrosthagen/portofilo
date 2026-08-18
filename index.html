@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="hf-icon-orange.png">
+    <link rel="icon" href="media/hf-icon-orange.png">
 
     <link rel="stylesheet" href="style.css" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -20,44 +20,105 @@
       rel="stylesheet"
     />
 
-    <title>| </title>
+    <title>Web Developer | Hennie Frosthagen</title>
     <meta name="description" content="" />
   </head>
 
   <body>
     <header></header>
 
-      <main id="main-content">
-        <div class="section container">
-    <h1>Hi, I'm Hennie 👋</h1>
-</div>
+    <main id="main-content">
 
-<div class="section container">
-    <h2>About Me</h2>
-</div>
+        <div class="section">
+            <div class="container">
+                <h1>Hi, I'm Hennie Frosthagen 👋</h1>
+                <h2>I'm a web designer and devloper based in the East Midlands, UK.</h2>
+            </div>
+        </div>
 
-<div class="section container">
-    <h2>My Skills</h2>
-    <p>I have experience working with</p>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>PHP</li>
-        <li>Liquid</li>
-        <li>JavaScript</li>
-        <li>MySQL</li>
-    </ul>
-</div>
+        <div class="section">
+            <div class="container flex-container">
+                <div class="text-cont">
+                    <div class="section-heading">
+                        <h2 class="subtitle">About Me</h2>
+                        <h3>Who am I?</h3>
+                    </div>
+                    <p>I'm originally from Sweden 🇸🇪, but moved to the UK 🇬🇧 with my family in 2013.</p>
+                    <p>I worked as a self-employed Web Designer along with my mum for a couple of years. After this I went back to college, and did a Foundation Degree in Computing.</p>
+                    <p>Currently, I am working as a Web Developer for an online ecommerce company.</p>
+                    <p>Outside of work, I enjoy watching movies, playing video games and cuddling with my dog Finnick 🐾.</p>
+                </div>
+                <div class="img-cont">
+                    <picture class="blob-image">
+                        <source media="(max-width: 767px)" srcset="media/hennie-800.webp">
+                        <source media="(max-width: 1199px)" srcset="media/hennie-1200.webp">
+                        <source media="(min-width: 1200px)" srcset="media/hennie-1600.webp">
+                        <img src="media/hennie-1600.webp" alt="An image of Hennie">
+                    </picture>
+                </div>
+            </div>
+        </div>
 
-<div class="section container">
-    <h2>Previous projects</h2>
-</div>
-        
+        <div class="divider">
+            <svg class="squiggle" width="1543" height="49" viewBox="0 0 1543 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1536.5 27C1512.5 -4.5 1489 27 1489 27C1489 27 1464.5 57.5 1440.5 26C1416.5 -5.5 1393 26 1393 26C1393 26 1369.5 58.5 1345.5 27C1321.5 -4.5 1298 27 1298 27C1298 27 1273.5 57.5 1249.5 26C1225.5 -5.5 1202 26 1202 26C1202 26 1177.5 57.5 1153.5 26C1129.5 -5.5 1106 26 1106 26C1106 26 1081.5 56.5 1057.5 25C1033.5 -6.5 1010 25 1010 25C1010 25 986.5 57.5 962.5 26C938.5 -5.5 915 26 915 26C915 26 890.5 56.5 866.5 25C842.5 -6.5 819 25 819 25C819 25 795 56.5 771 25C747 -6.5 724 24 724 24C724 24 699.5 54.5 675.5 23C651.5 -8.5 628 23 628 23C628 23 604.5 55.5 580.5 24C556.5 -7.5 533 24 533 24C533 24 508.5 54.5 484.5 23C460.5 -8.5 437 23 437 23C437 23 412.5 54.5 388.5 23C364.5 -8.5 341 23 341 23C341 23 316.5 53.5 292.5 22C268.5 -9.5 245 22 245 22C245 22 221.5 54.5 197.5 23C173.5 -8.5 150 23 150 23C150 23 125.5 53.5 101.5 22C77.5 -9.5 54 22 54 22C54 22 30 53.5 6 22" stroke="black" stroke-width="15"/>
+            </svg>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <h2 class="subtitle">Projects</h2>
+                <h3>What do I do?</h3>
+                <p>I create and design websites using various technologies, including Wordpress, Shopify, HTML and PHP. I have worked with Wordpress plugins such as Elementor and Divi, as well as developed themes and websites with just PHP, CSS and HTML.</p>
+                <p>Are you interested in seeing some of my past work? I have a few on <a href="/projects">this page</a>.</p>
+            </div>
+            <div class="container">
+                <h3>Main Skills</h3>
+                <ul id="skills-list">
+                    <li>
+                        <h4>Programming & Development</h4>
+                        <ul class="box-list flex-container">
+                            <li>HTML</li>
+                            <li>PHP</li>
+                            <li>CSS</li>
+                            <li>Liquid</li>
+                            <li>JavaScript</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Organisation</h4>
+                        <ul class="box-list flex-container">
+                            <li>Notion</li>
+                            <li>Microsoft Office</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Graphics, Photo Editing & Wireframing</h4>
+                        <ul class="box-list flex-container">
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                            <li>Figma</li>
+                            <li>Canva</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <h2>Previous projects</h2>
+            </div>
+        </div>
+
+
+
         </main> <!-- #main-content -->
 
-        <footer>
+    <footer>
 
-        </footer>
+    </footer>
 
     </body>
 
