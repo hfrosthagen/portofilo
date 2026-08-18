@@ -61,6 +61,7 @@ main {
 }
 
 .flex-container {
+  display: flex;
   flex-direction: row;
   gap: var(--margin-triple);
   align-items: center;
