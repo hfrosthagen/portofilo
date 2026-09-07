@@ -26,6 +26,9 @@
   --gap: 12px;
   --gap-xs: 4px;
 
+  --icon-size: 16px;
+  --icon-lg: 32px;
+
   --main-transition: all 0.2s ease;
 }
 
@@ -203,11 +206,15 @@ p a, li>a {
 /* ----- GENERAL ----- */
 .icon-wrapper {
   display: flex;
-  width: 26px;
-  height: 26px;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  justify-content: center;
+  align-items: center;
 }
 
-.icon-wrapper i {
+.icon-wrapper i, .icon-wrapper svg {
+  width: 100%;
+  height: auto;
   color: var(--color-secondary);
 }
 
@@ -216,8 +223,9 @@ p a, li>a {
   gap: var(--gap-xs);
 }
 
-.social-link {
-  display: block;
+.icon-wrapper:has(.social-link) {
+  width: var(--icon-lg);
+  height: var(--icon-lg);
 }
 
 .banner > .container {
@@ -255,11 +263,6 @@ p a, li>a {
   display: flex;
   align-items: center;
   gap: var(--gap-xs);
-}
-
-.boxlist .icon-wrapper {
-  width: 12px;
-  height: 12px;
 }
 
 /* .box-list li:before {
