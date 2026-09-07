@@ -41,6 +41,7 @@ body {
 
 main {
   flex: 1;
+  overflow: hidden;
 }
 
 .section {
@@ -64,6 +65,12 @@ main {
   justify-content: center;
   gap: var(--margin-triple);
   padding: 0 var(--margin-double);
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0;
+  }
 }
 
 .flex-container {
@@ -216,6 +223,12 @@ p a, li>a {
   list-style: none;
 }
 
+@media screen and (max-width: 767px) {
+  #skills-list {
+    grid-template-columns: 1fr;
+  }
+}
+
 .box-list {
   flex-direction: row;
   list-style: none;
@@ -266,6 +279,21 @@ p a, li>a {
 
 #banner h2 {
   font-size: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  #banner:after {
+    content: "";
+    background-image: url(https://hfrosthagen.github.io/portofilo/media/circle-graphic.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 500px;
+    height: 502px;
+    z-index: -1;
+    right: calc(calc(450px / 2) * -1);
+    bottom: calc(var(--margin-quatra) * -1);
+  }
 }
 
 
