@@ -32,6 +32,10 @@
   --main-transition: all 0.2s ease;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #f6f6f6;
   background-image: linear-gradient(to right, #eee 1px, transparent 1px),
